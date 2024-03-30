@@ -5,7 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var homeRouter = require('./routes/home');
 var aboutRouter = require('./routes/about');
 var servicesRouter = require('./routes/services');
@@ -33,7 +32,6 @@ app.use(express.static(__dirname + '/node_modules/typed.js/lib'));
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/home', homeRouter);
 app.use('/about', aboutRouter);
 app.use('/services', servicesRouter);
