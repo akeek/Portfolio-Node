@@ -4,14 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./public/routes/index');
-var usersRouter = require('./public/routes/users');
-var homeRouter = require('./public/routes/home');
-var aboutRouter = require('./public/routes/about');
-var servicesRouter = require('./public/routes/services');
-var recommendationsRouter = require('./public/routes/recommendations');
-var portfolioRouter = require('./public/routes/portfolio');
-var contactRouter = require('./public/routes/contact');
+var indexRouter = require('./routes/index');
+var usersRouter = require('./routes/users');
+var homeRouter = require('./routes/home');
+var aboutRouter = require('./routes/about');
+var servicesRouter = require('./routes/services');
+var recommendationsRouter = require('./routes/recommendations');
+var portfolioRouter = require('./routes/portfolio');
+var contactRouter = require('./routes/contact');
 
 var app = express();
 
